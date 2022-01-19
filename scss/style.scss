@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Outfit', serif;
+}
+
+body{
+    background-color: rgb(13, 19, 35);
+    main{
+        height: 100vh;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        section{
+            background-color:rgb(13, 19, 35);
+            color: rgb(255, 255, 255);
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, 1fr);
+            grid-template-areas:
+            "jeremy"
+            "work"
+            "play"
+            "study"
+            "exercise"
+            "social"
+            "selfCare";
+            .div__reportJeremy{
+                width: 90%;
+                margin: 5%;
+                background-color: rgb(29, 32, 75);
+                border-radius: 20px;
+                grid-area: jeremy;
+                .div__infoJeremy{
+                    height: 100px;
+                    border-radius: 20px;
+                    background-color: rgb(209, 81, 81);
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 15%;
+                        border: 1px solid rgb(255, 255, 255);
+                        border-radius: 50%;
+                    }
+                    div{
+                        width: 65%;
+                        margin-left: 10px;
+                        h1{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+                .div__selectTime{
+                    height: 50px;
+                    background-color: rgb(29, 32, 75);
+                    border-radius: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    button{
+                        width: 60px;
+                        border: none;
+                        background-color: rgb(29, 32, 75);
+                        color: rgb(150, 150, 150);
+                        font-size: 16px;
+                        cursor: pointer;
+                    }
+                    #btn__dailyTime{
+                        color: rgb(255, 255, 255);
+                    }
+                }
+            }
+            .div__hoursWork, .div__hoursPlay, .div__hoursStudy, .div__hoursExercise, .div__hoursSocial, .div__hoursSelf-Care{
+                background-color: rgb(255, 139, 100);
+                border-radius: 20px;
+                width: 90%;
+                height: fit-content;
+                margin: 5%;
+                grid-area: work;
+                .div__logoWork, .div__logoPlay, .div__logoStudy, .div__logoExercise, .div__logoSocial, .div__logoSelf-Care{
+                    height: 50px;
+                    width: 100%;
+                    overflow: hidden;
+                    img{
+                        float: right;
+                        padding-right: 20px;
+                    }
+                }
+                .div__infoTime{
+                    background-color: rgb(29, 32, 75);
+                    padding: 20px 10px;
+                    border-radius: 19px;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    &:hover{
+                        background-color: rgb(45, 50, 119);
+                    }
+                    .div__mainInfo{
+                        .title{
+                            font-size:20px;
+                        }
+                        .hours{
+                            padding-top: 5px;
+                            font-size: 32px;
+                        }
+                    }
+                    .div__infoLastWeek{
+                        text-align: end;
+                        color: rgb(200, 200, 200);
+                        p{
+                            padding-top: 20px
+                        }
+                    }
+                }
+            }
+            .div__hoursPlay{
+                background-color: rgb(86, 194, 230);
+                grid-area: play;
+            }
+            .div__hoursStudy{
+                background-color: rgb(255, 94, 125);
+                grid-area: study;
+            }
+            .div__hoursExercise{
+                background-color: rgb(75, 207, 131);
+                grid-area: exercise;
+            }
+            .div__hoursSocial{
+                background-color: rgb(114, 53, 209);
+                grid-area: social;
+            }
+            .div__hoursSelf-Care{
+                background-color: rgb(241, 199, 91);
+                grid-area: selfCare;
+            }
+        }
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            a{
+                color: hsl(228, 45%, 44%);
+            }
+        }
+        @media (min-width:768px){
+            section{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-areas:
+                "jeremy work play"
+                "jeremy study exercise"
+                "jeremy social selfCare";
+                .div__reportJeremy{
+                    .div__infoJeremy{
+                        flex-flow: column wrap;
+                        height: fit-content;
+                        text-align: center;
+                        padding: 20px;
+                        img{
+                            width: 50%;
+                        }
+                        div{
+                            p{
+                                margin-top: 15px;
+                            }
+                            h1{
+                                font-size: 36px;
+                            }
+                        }
+                    }
+                    .div__selectTime{
+                        height: 300px;
+                        flex-flow: column wrap;
+                    }
+                }
+            }
+        }
+        @media (min-width: 1024px){
+            section{
+                width: 800px;
+                margin: auto;
+            }
+        }
+    }
+}

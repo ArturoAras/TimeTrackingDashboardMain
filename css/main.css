@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: 'Outfit', serif; }
+
+body {
+  background-color: #0d1323; }
+  body main {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between; }
+    body main section {
+      background-color: #0d1323;
+      color: white;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(7, 1fr);
+      grid-template-areas: "jeremy" "work" "play" "study" "exercise" "social" "selfCare"; }
+      body main section .div__reportJeremy {
+        width: 90%;
+        margin: 5%;
+        background-color: #1d204b;
+        border-radius: 20px;
+        grid-area: jeremy; }
+        body main section .div__reportJeremy .div__infoJeremy {
+          height: 100px;
+          border-radius: 20px;
+          background-color: #d15151;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          align-items: center; }
+          body main section .div__reportJeremy .div__infoJeremy img {
+            width: 15%;
+            border: 1px solid white;
+            border-radius: 50%; }
+          body main section .div__reportJeremy .div__infoJeremy div {
+            width: 65%;
+            margin-left: 10px; }
+            body main section .div__reportJeremy .div__infoJeremy div h1 {
+              font-size: 1.5rem; }
+        body main section .div__reportJeremy .div__selectTime {
+          height: 50px;
+          background-color: #1d204b;
+          border-radius: 20px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center; }
+          body main section .div__reportJeremy .div__selectTime button {
+            width: 60px;
+            border: none;
+            background-color: #1d204b;
+            color: #969696;
+            font-size: 16px;
+            cursor: pointer; }
+          body main section .div__reportJeremy .div__selectTime #btn__dailyTime {
+            color: white; }
+      body main section .div__hoursWork, body main section .div__hoursPlay, body main section .div__hoursStudy, body main section .div__hoursExercise, body main section .div__hoursSocial, body main section .div__hoursSelf-Care {
+        background-color: #ff8b64;
+        border-radius: 20px;
+        width: 90%;
+        height: fit-content;
+        margin: 5%;
+        grid-area: work; }
+        body main section .div__hoursWork .div__logoWork, body main section .div__hoursWork .div__logoPlay, body main section .div__hoursWork .div__logoStudy, body main section .div__hoursWork .div__logoExercise, body main section .div__hoursWork .div__logoSocial, body main section .div__hoursWork .div__logoSelf-Care, body main section .div__hoursPlay .div__logoWork, body main section .div__hoursPlay .div__logoPlay, body main section .div__hoursPlay .div__logoStudy, body main section .div__hoursPlay .div__logoExercise, body main section .div__hoursPlay .div__logoSocial, body main section .div__hoursPlay .div__logoSelf-Care, body main section .div__hoursStudy .div__logoWork, body main section .div__hoursStudy .div__logoPlay, body main section .div__hoursStudy .div__logoStudy, body main section .div__hoursStudy .div__logoExercise, body main section .div__hoursStudy .div__logoSocial, body main section .div__hoursStudy .div__logoSelf-Care, body main section .div__hoursExercise .div__logoWork, body main section .div__hoursExercise .div__logoPlay, body main section .div__hoursExercise .div__logoStudy, body main section .div__hoursExercise .div__logoExercise, body main section .div__hoursExercise .div__logoSocial, body main section .div__hoursExercise .div__logoSelf-Care, body main section .div__hoursSocial .div__logoWork, body main section .div__hoursSocial .div__logoPlay, body main section .div__hoursSocial .div__logoStudy, body main section .div__hoursSocial .div__logoExercise, body main section .div__hoursSocial .div__logoSocial, body main section .div__hoursSocial .div__logoSelf-Care, body main section .div__hoursSelf-Care .div__logoWork, body main section .div__hoursSelf-Care .div__logoPlay, body main section .div__hoursSelf-Care .div__logoStudy, body main section .div__hoursSelf-Care .div__logoExercise, body main section .div__hoursSelf-Care .div__logoSocial, body main section .div__hoursSelf-Care .div__logoSelf-Care {
+          height: 50px;
+          width: 100%;
+          overflow: hidden; }
+          body main section .div__hoursWork .div__logoWork img, body main section .div__hoursWork .div__logoPlay img, body main section .div__hoursWork .div__logoStudy img, body main section .div__hoursWork .div__logoExercise img, body main section .div__hoursWork .div__logoSocial img, body main section .div__hoursWork .div__logoSelf-Care img, body main section .div__hoursPlay .div__logoWork img, body main section .div__hoursPlay .div__logoPlay img, body main section .div__hoursPlay .div__logoStudy img, body main section .div__hoursPlay .div__logoExercise img, body main section .div__hoursPlay .div__logoSocial img, body main section .div__hoursPlay .div__logoSelf-Care img, body main section .div__hoursStudy .div__logoWork img, body main section .div__hoursStudy .div__logoPlay img, body main section .div__hoursStudy .div__logoStudy img, body main section .div__hoursStudy .div__logoExercise img, body main section .div__hoursStudy .div__logoSocial img, body main section .div__hoursStudy .div__logoSelf-Care img, body main section .div__hoursExercise .div__logoWork img, body main section .div__hoursExercise .div__logoPlay img, body main section .div__hoursExercise .div__logoStudy img, body main section .div__hoursExercise .div__logoExercise img, body main section .div__hoursExercise .div__logoSocial img, body main section .div__hoursExercise .div__logoSelf-Care img, body main section .div__hoursSocial .div__logoWork img, body main section .div__hoursSocial .div__logoPlay img, body main section .div__hoursSocial .div__logoStudy img, body main section .div__hoursSocial .div__logoExercise img, body main section .div__hoursSocial .div__logoSocial img, body main section .div__hoursSocial .div__logoSelf-Care img, body main section .div__hoursSelf-Care .div__logoWork img, body main section .div__hoursSelf-Care .div__logoPlay img, body main section .div__hoursSelf-Care .div__logoStudy img, body main section .div__hoursSelf-Care .div__logoExercise img, body main section .div__hoursSelf-Care .div__logoSocial img, body main section .div__hoursSelf-Care .div__logoSelf-Care img {
+            float: right;
+            padding-right: 20px; }
+        body main section .div__hoursWork .div__infoTime, body main section .div__hoursPlay .div__infoTime, body main section .div__hoursStudy .div__infoTime, body main section .div__hoursExercise .div__infoTime, body main section .div__hoursSocial .div__infoTime, body main section .div__hoursSelf-Care .div__infoTime {
+          background-color: #1d204b;
+          padding: 20px 10px;
+          border-radius: 19px;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between; }
+          body main section .div__hoursWork .div__infoTime:hover, body main section .div__hoursPlay .div__infoTime:hover, body main section .div__hoursStudy .div__infoTime:hover, body main section .div__hoursExercise .div__infoTime:hover, body main section .div__hoursSocial .div__infoTime:hover, body main section .div__hoursSelf-Care .div__infoTime:hover {
+            background-color: #2d3277; }
+          body main section .div__hoursWork .div__infoTime .div__mainInfo .title, body main section .div__hoursPlay .div__infoTime .div__mainInfo .title, body main section .div__hoursStudy .div__infoTime .div__mainInfo .title, body main section .div__hoursExercise .div__infoTime .div__mainInfo .title, body main section .div__hoursSocial .div__infoTime .div__mainInfo .title, body main section .div__hoursSelf-Care .div__infoTime .div__mainInfo .title {
+            font-size: 20px; }
+          body main section .div__hoursWork .div__infoTime .div__mainInfo .hours, body main section .div__hoursPlay .div__infoTime .div__mainInfo .hours, body main section .div__hoursStudy .div__infoTime .div__mainInfo .hours, body main section .div__hoursExercise .div__infoTime .div__mainInfo .hours, body main section .div__hoursSocial .div__infoTime .div__mainInfo .hours, body main section .div__hoursSelf-Care .div__infoTime .div__mainInfo .hours {
+            padding-top: 5px;
+            font-size: 32px; }
+          body main section .div__hoursWork .div__infoTime .div__infoLastWeek, body main section .div__hoursPlay .div__infoTime .div__infoLastWeek, body main section .div__hoursStudy .div__infoTime .div__infoLastWeek, body main section .div__hoursExercise .div__infoTime .div__infoLastWeek, body main section .div__hoursSocial .div__infoTime .div__infoLastWeek, body main section .div__hoursSelf-Care .div__infoTime .div__infoLastWeek {
+            text-align: end;
+            color: #c8c8c8; }
+            body main section .div__hoursWork .div__infoTime .div__infoLastWeek p, body main section .div__hoursPlay .div__infoTime .div__infoLastWeek p, body main section .div__hoursStudy .div__infoTime .div__infoLastWeek p, body main section .div__hoursExercise .div__infoTime .div__infoLastWeek p, body main section .div__hoursSocial .div__infoTime .div__infoLastWeek p, body main section .div__hoursSelf-Care .div__infoTime .div__infoLastWeek p {
+              padding-top: 20px; }
+      body main section .div__hoursPlay {
+        background-color: #56c2e6;
+        grid-area: play; }
+      body main section .div__hoursStudy {
+        background-color: #ff5e7d;
+        grid-area: study; }
+      body main section .div__hoursExercise {
+        background-color: #4bcf83;
+        grid-area: exercise; }
+      body main section .div__hoursSocial {
+        background-color: #7235d1;
+        grid-area: social; }
+      body main section .div__hoursSelf-Care {
+        background-color: #f1c75b;
+        grid-area: selfCare; }
+    body main .attribution {
+      font-size: 11px;
+      text-align: center; }
+      body main .attribution a {
+        color: #3e52a3; }
+    @media (min-width: 768px) {
+      body main section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "jeremy work play" "jeremy study exercise" "jeremy social selfCare"; }
+        body main section .div__reportJeremy .div__infoJeremy {
+          flex-flow: column wrap;
+          height: fit-content;
+          text-align: center;
+          padding: 20px; }
+          body main section .div__reportJeremy .div__infoJeremy img {
+            width: 50%; }
+          body main section .div__reportJeremy .div__infoJeremy div p {
+            margin-top: 15px; }
+          body main section .div__reportJeremy .div__infoJeremy div h1 {
+            font-size: 36px; }
+        body main section .div__reportJeremy .div__selectTime {
+          height: 300px;
+          flex-flow: column wrap; } }
+    @media (min-width: 1024px) {
+      body main section {
+        width: 800px;
+        margin: auto; } }
