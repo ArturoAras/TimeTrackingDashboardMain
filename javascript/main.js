@@ -9,7 +9,7 @@ function valoresDefecto(){
             for ( const dato of misDatos){
                 $("section").append(`<div class="div__hoursJeremy div__hours${dato.title}">
                                         <div class="div__logo${dato.title}">
-                                            <img src="./images/icon-${dato.title}.svg">
+                                            <img src="./images/icon-${dato.title}.svg" alt="img${dato.title">
                                         </div>
                                         <div class="div__infoTime">
                                             <div class="div__mainInfo">
