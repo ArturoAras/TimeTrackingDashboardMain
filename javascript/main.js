@@ -17,7 +17,7 @@ function valoresDefecto(){
                                                 <h3 class="hours hours${dato.title}">${dato.timeframes.daily.current}hrs</h3>
                                             </div>
                                             <div class="div__infoLastWeek">
-                                                <img src="../images/icon-ellipsis.svg">
+                                                <img src="./images/icon-ellipsis.svg">
                                                 <p class="p__hours${dato.title}">Last week - ${dato.timeframes.daily.previous}hrs</p>
                                             </div>
                                         </div>
